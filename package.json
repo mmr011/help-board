@@ -1,0 +1,36 @@
+{
+  "name": "help-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esbuild src/index.ts --platform=node --bundle --minify --outfile=build/index.js && node build/index.js",
+    "dev": "nodemon",
+    "build": "esbuild src/index.ts --platform=node --bundle --minify --outfile=build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmr011/help-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mmr011/help-board/issues"
+  },
+  "homepage": "https://github.com/mmr011/help-board#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.8",
+    "esbuild": "^0.27.2",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
