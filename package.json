@@ -21,14 +21,23 @@
   },
   "homepage": "https://github.com/mmr011/help-board#readme",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.1.3"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.6",
+    "@types/helmet": "^0.0.48",
+    "@types/morgan": "^1.9.10",
     "@types/node": "^25.0.8",
+    "cors": "^2.8.5",
     "esbuild": "^0.27.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
     "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
