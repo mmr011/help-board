@@ -2,11 +2,11 @@
   "name": "help-board",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "esbuild src/index.ts --platform=node --bundle --minify --outfile=build/index.js && node build/index.js",
+    "start": "esbuild src/app.ts --platform=node --bundle --minify --outfile=build/app.js && node build/app.js",
     "dev": "nodemon",
-    "build": "esbuild src/index.ts --platform=node --bundle --minify --outfile=build/index.js"
+    "build": "esbuild src/app.ts --platform=node --bundle --minify --outfile=build/app.js"
   },
   "repository": {
     "type": "git",

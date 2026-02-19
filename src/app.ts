@@ -20,6 +20,7 @@ app.get('/', (_, res: Response) => {
   res.status(200).send('Hello World!');
 });
 
+
 app.listen(PORT, () => {
   console.log(`Server running at port: ${PORT}`);
 }).on('error', (err) => {
