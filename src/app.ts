@@ -5,11 +5,14 @@ import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import cors from 'cors';
 import { router } from './routes';
+import { run } from './config/database';
+import { config } from './config';
 
 // configs
 dotenv.config();
-const PORT = process.env.PORT;
 const app: Application = express();
+
+run().catch(console.error);
 
 // Logger, Parser & Security middleware
 app.use(morgan('dev'));
@@ -25,8 +28,8 @@ app.get('/', (_, res: Response) => {
 // Mount all routes under `/api`
 app.use('/api', router);
 
-app.listen(PORT, () => {
-  console.log(`Server running at port: ${PORT}`);
+app.listen(config.PORT, () => {
+  console.log(`Server running at port: ${config.PORT}`);
 }).on('error', (err) => {
   throw new Error(err.message)
 });
